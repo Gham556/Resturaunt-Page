@@ -3,8 +3,6 @@ button {
     background: #394;
 };
 
-#content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.logo {
+    height: 32px;
+};
