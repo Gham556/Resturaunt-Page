@@ -15,6 +15,7 @@ button {
 
 .switchContainer {
     margin-top: 32px;
+    height: -webkit-fill-available;
 }
 
 /* home page */
@@ -61,6 +62,46 @@ h1 {
 
 .babyCard {
     background: #FFF;
-    width: 100px;
+    width: 400px;
+    height: 200px;
     padding: 20px;
+    margin-top: 20%;
+
+    display: flex;
+
+    border: solid #d946ef;
+}
+
+.babyCard > img {
+    height: 80%;
+    align-self: center;
+    
+}
+
+.babyCardText {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 70%;
+
+    white-space: pre-line;
+}
+
+.babyName {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.babyDetails {
+    align-self: center;
+
+    font-weight: 700;
+
+    
+}
+
+.babyDetails > * {
+    margin: 30px;
+
+    
 }
