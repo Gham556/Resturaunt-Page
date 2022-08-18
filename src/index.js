@@ -1,16 +1,14 @@
 
 import { pageLoad } from './page-load.js';
-
-const content = document.querySelector('div')
-const contactTab = document.createElement('button');
-contactTab.addEventListener('click', switchTabs);
-content.appendChild(contactTab);
+;
 
 
+const content = document.querySelector('div');
+const contactTab = document.querySelector('.contactTab');
 
-document.addEventListener('DOMContentLoaded', import('./style.css'))
+contactTab.addEventListener('click', switchTabs)
 
-const image = document.querySelector('img')
+
 
 
 
