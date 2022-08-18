@@ -4,6 +4,8 @@ import { loadMenu } from './menuPage.js';
 import { contactPageLoad } from './contactPage.js';
 import { homePageLoad } from './homePageLoad.js';
 
+pageLoad();
+
 const switchContainer = document.querySelector('.switchContainer');
 const buttons = document.querySelectorAll('button');
 

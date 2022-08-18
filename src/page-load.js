@@ -1,6 +1,6 @@
 import babies from './babies-2028268.svg';
 
-export const pageLoad = (() => {
+export const pageLoad = () => {
     
     const image = new Image();
    
@@ -25,6 +25,7 @@ export const pageLoad = (() => {
     mainContainer.classList.add('mainContainer');
     logoHeader.classList.add('logoHeader');
     image.classList.add('logo');
+    heading.classList.add('title')
     
     header.classList.add('header');
     contactTab.classList.add('contactTab');
@@ -56,5 +57,5 @@ export const pageLoad = (() => {
 
     
    
-})();
+};
 
