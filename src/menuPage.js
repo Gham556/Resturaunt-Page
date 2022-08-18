@@ -4,13 +4,14 @@ import babies from './babies-2028268.svg';
 export const loadMenu = () => {
     const image = new Image();
    
-    image.src = babies
-
     const content = document.querySelector('div')
-  
+    const switchContainer = document.querySelector('.switchContainer')
+    const babyCard = document.createElement('div');
 
     image.classList.add('logo');
+    babyCard.classList.add('babyCard');
 
-    content.appendChild(contactTab);
+    image.src = babies
 
+    switchContainer.appendChild(babyCard)
 }

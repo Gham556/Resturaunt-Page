@@ -27,9 +27,9 @@ export const pageLoad = (() => {
     image.classList.add('logo');
     
     header.classList.add('header');
-    contactTab.classList.add('contactTab', 'tab');
-    homeTab.classList.add('homeTab', 'tab');
-    menuTab.classList.add('menuTab', 'tab');
+    contactTab.classList.add('contactTab');
+    homeTab.classList.add('homeTab');
+    menuTab.classList.add('menuTab');
    
     
     heading.textContent = "Babies Big Bites";
@@ -52,7 +52,7 @@ export const pageLoad = (() => {
    
     switchContainer.appendChild(blurb);
     
-    content.addEventListener('DOMContentLoaded', import('./style.css'));
+    
 
     
    

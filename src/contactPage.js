@@ -1,26 +1,20 @@
+import babies from './babies-2028268.svg';
+import babyGirl from './baby-146862.svg';
+
 export function contactPageLoad() {
+    const image = new Image();
+    const profilPic = new Image();
+
     const content = document.querySelector('div')
-    const heading = document.createElement('h1');
-    const image = document.createElement('img');
-    const card = document.createElement('div.card');
+    const switchContainer = document.querySelector('.switchContainer')
+    const babyCard = document.createElement('div');
 
-    const nameTag = document.createElement('h1.baby');
-    const title = document.createElement('div.title');
-    const phoneNum = document.createElement('div.phoneNum');
-    const email = document.createElement('div.email')
+    image.classList.add('logo');
+    babyCard.classList.add('babyCard');
 
-    title.textContent = "Owner";
-    email.textContent = "totallyrealemail@notfake.com";
-    phoneNum.textContent = "111-222-3333"
+    image.src = babies;
+    profilPic.src = babyGirl;
 
-    image.src = ('./babies-2028268.svg');
-
-    heading.textContent = "Contact Us";
-    
-    content.appendChild(heading);
-    content.appendChild(image);
-    content.appendChild(card)
-
-    card.appendChild(nameTag, phoneNum, email);
-
+    switchContainer.appendChild(babyCard)
+    babyCard.appendChild(profilPic)
 }
