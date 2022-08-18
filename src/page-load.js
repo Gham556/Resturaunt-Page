@@ -2,21 +2,23 @@ import babies from './babies-2028268.svg';
 
 export const pageLoad = (() => {
     
+    const image = new Image();
+   
+    image.src = babies
+
     const content = document.querySelector('div')
     const heading = document.createElement('h1');
     const blurb = document.createElement('h2');
     
+    //buttons
     const contactTab = document.createElement('button');
     const homeTab = document.createElement('button');
     const menuTab = document.createElement('button');
 
+    //containers
     const header = document.createElement('div');
     const logoHeader = document.createElement('div');
     const mainContainer = document.createElement('div');
-
-    const image = new Image();
-   
-    image.src = babies
 
     mainContainer.classList.add('mainContainer');
     logoHeader.classList.add('logoHeader');
@@ -30,7 +32,10 @@ export const pageLoad = (() => {
     
     heading.textContent = "Babies Big Bites";
     blurb.textContent = "Come on down to Babies Big Bites! The best late-night eatery around!";
-    
+    contactTab.textContent = "Contact";
+    homeTab.textContent = "Home";
+    menuTab.textContent = "Menu";
+
     content.appendChild(header);
     
     header.appendChild(contactTab);
