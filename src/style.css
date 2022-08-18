@@ -19,7 +19,7 @@ button {
 }
 
 /* home page */
-h1 {
+.title {
     font-size: 5rem;
     font-weight: 700;
     margin-bottom: 10px;

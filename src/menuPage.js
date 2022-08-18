@@ -6,12 +6,27 @@ export const loadMenu = () => {
    
     const content = document.querySelector('div')
     const switchContainer = document.querySelector('.switchContainer')
-    const babyCard = document.createElement('div');
+    const menuContainer = document.createElement('div');
+
+    const menuTitle = document.createElement('h1');
+    const menuItemsContainer = document.createElement('div');
+
+    const itemOne = document.createElement('h2');
+    const itemTwo = document.createElement('h2');
+    const itemThree = document.createElement('h2')
+    const itemFour = document.createElement('h2');
 
     image.classList.add('logo');
-    babyCard.classList.add('babyCard');
+  
+    menuTitle.textContent = "MENU";
 
     image.src = babies
 
-    switchContainer.appendChild(babyCard)
+    switchContainer.appendChild(menuContainer);
+    menuContainer.appendChild(menuTitle);
+    menuContainer.appendChild(menuItemsContainer);
+
+    menuItemsContainer.appendChild(itemOne);
+    menuItemsContainer.append(itemTwo, itemThree, itemFour);
+
 }

@@ -19,6 +19,8 @@ export const homePageLoad = function () {
      mainContainer.classList.add('mainContainer');
      logoHeader.classList.add('logoHeader');
      image.classList.add('logo');
+     
+     heading.classList.add('title');
 
      heading.textContent = "Babies Big Bites";
      blurb.textContent = "Come on down to Babies Big Bites! The best late-night eatery around!";
@@ -31,4 +33,4 @@ export const homePageLoad = function () {
     
      switchContainer.appendChild(blurb);
      
-}
+};

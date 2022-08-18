@@ -20,8 +20,13 @@ i.addEventListener('click', function() {
         else if (temp === 'homeTab') {
             homePageLoad();
         }
+
+        else if (temp === 'menuTab') {
+            loadMenu();
+        }
 })
 };
 
 
 content.addEventListener('DOMContentLoaded', import('./style.css'));
+
