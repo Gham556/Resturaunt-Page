@@ -19,7 +19,9 @@ export const pageLoad = (() => {
     const header = document.createElement('div');
     const logoHeader = document.createElement('div');
     const mainContainer = document.createElement('div');
+    const switchContainer = document.createElement('div');
 
+    switchContainer.classList.add('switchContainer');
     mainContainer.classList.add('mainContainer');
     logoHeader.classList.add('logoHeader');
     image.classList.add('logo');
@@ -42,12 +44,13 @@ export const pageLoad = (() => {
     header.appendChild(homeTab);
     header.appendChild(menuTab);
 
-    content.appendChild(mainContainer)
-    mainContainer.appendChild(logoHeader)
+    content.appendChild(switchContainer);
+    switchContainer.appendChild(mainContainer);
+    mainContainer.appendChild(logoHeader);
     logoHeader.appendChild(image);
     logoHeader.appendChild(heading);
    
-    content.appendChild(blurb);
+    switchContainer.appendChild(blurb);
     
     content.addEventListener('DOMContentLoaded', import('./style.css'));
 

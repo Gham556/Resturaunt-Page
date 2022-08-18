@@ -7,9 +7,7 @@ export const loadMenu = () => {
     image.src = babies
 
     const content = document.querySelector('div')
-    const contactTab = document.createElement('button');
-    const homeTab = document.createElement('button');
-    const menuTab = document.createElement('button');
+  
 
     image.classList.add('logo');
 
